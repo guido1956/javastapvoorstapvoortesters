@@ -28,7 +28,7 @@ class CalculatorTest2 {
 
 
     @ParameterizedTest
-    @CsvFileSource(resources = "basicoperations.csv")
+    @CsvFileSource(resources = "basicoperations.csv", numLinesToSkip = 1)
     void completeTestForBasicFunctions(String keyword, int a, int b, int expected, String message) {
         Calculator c = new Calculator();
         int actual = 0;
