@@ -38,6 +38,10 @@ class CalculatorTest2 {
                 break;
             case "multiply" :
                 actual = c.multiply(a,b);
+                break;
+            default:
+                actual= -9999999; // keyword is niet bekend
+                break;
         }
         assertEquals(expected,actual, message);
     }
