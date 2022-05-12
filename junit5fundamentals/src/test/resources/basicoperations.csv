@@ -1,0 +1,5 @@
+add, 12, 12, 24, adding two positive numbers not correct
+add, 0, 0, 0, adding zero + zero not correct
+add, -13, 24, 11,  adding negative number with result positive value with a positive result not correct
+add, -24, 12, -12, adding two negative numbers with result negative value not correct
+multiply, 3, 3, 9, multiply two positive nummers not correct

@@ -25,6 +25,22 @@ class CalculatorTest2 {
         int actual = c.add( a, b);
         assertEquals(expected, actual, "adding not correct");
     }
+
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "basicoperations.csv")
+    void completeTestForBasicFunctions(String keyword, int a, int b, int expected, String message) {
+        Calculator c = new Calculator();
+        int actual = 0;
+        switch(keyword) {
+            case "add" :
+                actual = c.add(a,b);
+                break;
+            case "multiply" :
+                actual = c.multiply(a,b);
+        }
+        assertEquals(expected,actual, message);
+    }
 }
 
 
