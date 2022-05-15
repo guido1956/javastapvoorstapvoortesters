@@ -11,12 +11,12 @@ class CalculatorTestShowDisplay {
 
 
     @BeforeEach
-    public void setStreams() {
+    public void setStream() {
         System.setOut(new PrintStream(out));
     }
 
     @AfterEach
-    public void restoreInitialStreams() {
+    public void restoreInitialStream() {
         System.setOut(originalOut);
     }
 
