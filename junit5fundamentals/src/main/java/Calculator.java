@@ -1,5 +1,5 @@
 public class Calculator {
-    String displayCalculation = "";
+    private String displayCalculation = "";
 
     public int add(int a, int b) {
         displayCalculation = a + " + " + b + " = " + (a + b);
@@ -7,7 +7,7 @@ public class Calculator {
     }
 
     public int multiply(int a, int b) {
-        displayCalculation = a + " * " + b + " = " + (a + b);
+        displayCalculation = a + " * " + b + " = " + (a * b);
         return a * b;
     }
 
@@ -21,11 +21,11 @@ public class Calculator {
         return a * a;
     }
 
-    public void setDisplayCalculation() {
+    public void showDisplayCalculation() {
         System.out.println(displayCalculation);
     }
-
-
-
 }
+
+
+
 
