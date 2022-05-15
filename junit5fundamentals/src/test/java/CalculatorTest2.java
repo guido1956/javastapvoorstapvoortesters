@@ -28,7 +28,7 @@ class CalculatorTest2 {
 
 
     @ParameterizedTest
-    @CsvFileSource(resources = "basicoperations.csv", numLinesToSkip = 1)
+    @CsvFileSource(resources = "basicoperations.csv", numLinesToSkip = 2)
     void completeTestForBasicFunctions(String keyword, int a, int b, int expected, String message) {
         Calculator c = new Calculator();
         int actual = 0;
@@ -38,6 +38,9 @@ class CalculatorTest2 {
                 break;
             case "multiply" :
                 actual = c.multiply(a,b);
+                break;
+            case "square" :
+                actual = c.square(a);
                 break;
             default:
                 actual= -9999999; // keyword is niet bekend
