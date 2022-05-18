@@ -20,7 +20,7 @@ public class Calculator {
     }
 
     public int square(int a) {
-        displayCalculation = "square" +  a + " = " + (a * a);
+        displayCalculation = "square " +  a + " = " + (a * a);
         return a * a;
     }
 

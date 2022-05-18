@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculatorTest {
     @Test
     @DisplayName("Test multiplying two numbers")
-    void add() {
+    void multiply() {
         Calculator c = new Calculator();
         int numberFirst = 2;
         int numberSecond = 3;
