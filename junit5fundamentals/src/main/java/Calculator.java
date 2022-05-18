@@ -1,6 +1,9 @@
 public class Calculator {
     private String displayCalculation = "";
 
+    public Calculator() {
+
+    }
     public int add(int a, int b) {
         displayCalculation = a + " + " + b + " = " + (a + b);
         return a + b;

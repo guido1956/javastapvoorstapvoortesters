@@ -9,7 +9,6 @@ class CalculatorTestShowDisplay {
     private final PrintStream originalOut = System.out;
     private final ByteArrayOutputStream out = new ByteArrayOutputStream();
 
-
     @BeforeEach
     public void setStream() {
         System.setOut(new PrintStream(out));
