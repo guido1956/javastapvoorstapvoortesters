@@ -2,7 +2,6 @@ public class Calculator {
     private String displayCalculation = "";
 
     public Calculator() {
-
     }
     public int add(int a, int b) {
         displayCalculation = a + " + " + b + " = " + (a + b);
@@ -10,8 +9,9 @@ public class Calculator {
     }
 
     public int multiply(int a, int b) {
-        displayCalculation = a + " * " + b + " = " + (a * b);
-        return a * b;
+        int result = a * b;
+        displayCalculation = a + " * " + b + " = " + result;
+        return result;
     }
 
     public boolean bigger(int a, int b) {
